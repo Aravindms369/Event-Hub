@@ -1,0 +1,155 @@
+# packages in environment at C:\Users\HP\Anaconda3\envs\streamlit:
+#
+# Name                    Version                   Build  Channel
+absl-py                   0.10.0                   pypi_0    pypi
+altair                    4.1.0                    pypi_0    pypi
+argon2-cffi               20.1.0                   pypi_0    pypi
+asgiref                   3.3.4                    pypi_0    pypi
+astor                     0.8.1                    pypi_0    pypi
+astunparse                1.6.3                    pypi_0    pypi
+attrs                     19.3.0                   pypi_0    pypi
+autocorrect               2.5.0                    pypi_0    pypi
+backcall                  0.2.0                    pypi_0    pypi
+base58                    2.0.1                    pypi_0    pypi
+bleach                    3.1.5                    pypi_0    pypi
+blinker                   1.4                      pypi_0    pypi
+boto                      2.49.0                   pypi_0    pypi
+boto3                     1.14.33                  pypi_0    pypi
+botocore                  1.17.33                  pypi_0    pypi
+ca-certificates           2020.6.24                     0  
+cachetools                4.1.1                    pypi_0    pypi
+certifi                   2020.6.20                py37_0  
+cffi                      1.14.1                   pypi_0    pypi
+chardet                   3.0.4                    pypi_0    pypi
+click                     7.1.2                    pypi_0    pypi
+colorama                  0.4.3                    pypi_0    pypi
+cycler                    0.10.0                   pypi_0    pypi
+cython                    0.29.14                  pypi_0    pypi
+decorator                 4.4.2                    pypi_0    pypi
+defusedxml                0.6.0                    pypi_0    pypi
+django                    2.2.13                   pypi_0    pypi
+django-braces             1.14.0                   pypi_0    pypi
+django-debug-toolbar      3.2                      pypi_0    pypi
+django-model-utils        4.1.1                    pypi_0    pypi
+django-private-chat       0.3.0                    pypi_0    pypi
+docutils                  0.15.2                   pypi_0    pypi
+entrypoints               0.3                      pypi_0    pypi
+enum-compat               0.0.3                    pypi_0    pypi
+gast                      0.3.3                    pypi_0    pypi
+gensim                    3.8.3                    pypi_0    pypi
+google-auth               1.21.2                   pypi_0    pypi
+google-auth-oauthlib      0.4.1                    pypi_0    pypi
+google-pasta              0.2.0                    pypi_0    pypi
+gpt-2-simple              0.7.2                    pypi_0    pypi
+gpt2-client               2.1.5                    pypi_0    pypi
+grpcio                    1.32.0                   pypi_0    pypi
+h5py                      2.10.0                   pypi_0    pypi
+idna                      2.10                     pypi_0    pypi
+importlib-metadata        1.7.0                    pypi_0    pypi
+ipykernel                 5.3.4                    pypi_0    pypi
+ipython                   7.17.0                   pypi_0    pypi
+ipython-genutils          0.2.0                    pypi_0    pypi
+ipywidgets                7.5.1                    pypi_0    pypi
+jedi                      0.17.2                   pypi_0    pypi
+jinja2                    2.11.2                   pypi_0    pypi
+jmespath                  0.10.0                   pypi_0    pypi
+joblib                    0.16.0                   pypi_0    pypi
+jsonschema                3.2.0                    pypi_0    pypi
+jupyter-client            6.1.6                    pypi_0    pypi
+jupyter-core              4.6.3                    pypi_0    pypi
+keras-applications        1.0.8                    pypi_0    pypi
+keras-preprocessing       1.1.2                    pypi_0    pypi
+kiwisolver                1.2.0                    pypi_0    pypi
+markdown                  3.2.2                    pypi_0    pypi
+markupsafe                1.1.1                    pypi_0    pypi
+matplotlib                3.3.0                    pypi_0    pypi
+mistune                   0.8.4                    pypi_0    pypi
+mock                      4.0.3                    pypi_0    pypi
+nbconvert                 5.6.1                    pypi_0    pypi
+nbformat                  5.0.7                    pypi_0    pypi
+nltk                      3.5                      pypi_0    pypi
+notebook                  6.1.0                    pypi_0    pypi
+numpy                     1.18.5                   pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+openssl                   1.1.1g               he774522_0  
+opt-einsum                3.3.0                    pypi_0    pypi
+packaging                 20.4                     pypi_0    pypi
+pandas                    1.1.0                    pypi_0    pypi
+pandocfilters             1.4.2                    pypi_0    pypi
+parso                     0.7.1                    pypi_0    pypi
+pathtools                 0.1.2                    pypi_0    pypi
+pickleshare               0.7.5                    pypi_0    pypi
+pillow                    7.2.0                    pypi_0    pypi
+pip                       20.1.1                   py37_1  
+plotly                    4.9.0                    pypi_0    pypi
+prometheus-client         0.8.0                    pypi_0    pypi
+prompt-toolkit            3.0.5                    pypi_0    pypi
+protobuf                  3.12.4                   pypi_0    pypi
+pyarrow                   1.0.0                    pypi_0    pypi
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pycparser                 2.20                     pypi_0    pypi
+pydeck                    0.4.0                    pypi_0    pypi
+pygments                  2.6.1                    pypi_0    pypi
+pyparsing                 2.4.7                    pypi_0    pypi
+pyrsistent                0.16.0                   pypi_0    pypi
+pysocks                   1.7.1                    pypi_0    pypi
+python                    3.7.7                h81c818b_4  
+python-dateutil           2.8.1                    pypi_0    pypi
+pytz                      2020.1                   pypi_0    pypi
+pywin32                   228                      pypi_0    pypi
+pywinpty                  0.5.7                    pypi_0    pypi
+pyzmq                     19.0.2                   pypi_0    pypi
+regex                     2020.7.14                pypi_0    pypi
+requests                  2.24.0                   pypi_0    pypi
+requests-oauthlib         1.3.0                    pypi_0    pypi
+retrying                  1.3.3                    pypi_0    pypi
+rsa                       4.6                      pypi_0    pypi
+s3transfer                0.3.3                    pypi_0    pypi
+scikit-learn              0.23.1                   pypi_0    pypi
+scipy                     1.4.1                    pypi_0    pypi
+seaborn                   0.11.0                   pypi_0    pypi
+send2trash                1.5.0                    pypi_0    pypi
+setuptools                49.2.0                   py37_0  
+six                       1.15.0                   pypi_0    pypi
+sklearn                   0.0                      pypi_0    pypi
+smart-open                2.1.1                    pypi_0    pypi
+sqlite                    3.32.3               h2a8f88b_0  
+sqlparse                  0.4.1                    pypi_0    pypi
+streamlit                 0.64.0                   pypi_0    pypi
+tensorboard               2.5.0                    pypi_0    pypi
+tensorboard-data-server   0.6.1                    pypi_0    pypi
+tensorboard-plugin-wit    1.7.0                    pypi_0    pypi
+tensorflow                2.3.0                    pypi_0    pypi
+tensorflow-estimator      2.3.0                    pypi_0    pypi
+termcolor                 1.1.0                    pypi_0    pypi
+terminado                 0.8.3                    pypi_0    pypi
+testpath                  0.4.4                    pypi_0    pypi
+textblob                  0.15.3                   pypi_0    pypi
+threadpoolctl             2.1.0                    pypi_0    pypi
+toml                      0.10.1                   pypi_0    pypi
+toolz                     0.10.0                   pypi_0    pypi
+toposort                  1.6                      pypi_0    pypi
+tornado                   6.0.4                    pypi_0    pypi
+tqdm                      4.49.0                   pypi_0    pypi
+traitlets                 4.3.3                    pypi_0    pypi
+tweepy                    3.10.0                   pypi_0    pypi
+tweet-preprocessor        0.6.0                    pypi_0    pypi
+typing-extensions         3.7.4.3                  pypi_0    pypi
+tzlocal                   2.1                      pypi_0    pypi
+urllib3                   1.25.10                  pypi_0    pypi
+validators                0.16.0                   pypi_0    pypi
+vc                        14.1                 h0510ff6_4  
+vs2015_runtime            14.16.27012          hf0eaf9b_3  
+watchdog                  0.10.3                   pypi_0    pypi
+wcwidth                   0.2.5                    pypi_0    pypi
+webencodings              0.5.1                    pypi_0    pypi
+websockets                8.1                      pypi_0    pypi
+werkzeug                  1.0.1                    pypi_0    pypi
+wheel                     0.34.2                   py37_0  
+widgetsnbextension        3.5.1                    pypi_0    pypi
+wincertstore              0.2                      py37_0  
+wordcloud                 1.7.0                    pypi_0    pypi
+wrapt                     1.12.1                   pypi_0    pypi
+zipp                      3.1.0                    pypi_0    pypi
+zlib                      1.2.11               h62dcd97_4  
