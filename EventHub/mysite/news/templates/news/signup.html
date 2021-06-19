@@ -1,0 +1,31 @@
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<title>EventHub-Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="icon" type="image/png" href="{% static 'signup/images/icon.png' %}"/>
+
+		<!-- LINEARICONS -->
+	<link rel="stylesheet" href="{% static 'signup/fonts/linearicons/style.css' %}">
+		
+		<!-- STYLE CSS -->
+	<link rel="stylesheet" href="{% static 'signup/css/style.css' %}">
+</head>
+
+<body>
+	{% include "news/includes/messages.html" %}
+
+	<div class="wrapper">
+		<div class="inner">
+			<img src="{% static 'signup/images/image-1.png' %}" alt="" class="image-1">
+			{% block content %}
+            {% endblock %}		
+			<img src="{% static 'signup/images/image-2.png' %}" alt="" class="image-2">
+		</div>
+			
+	</div>
+		
+	<script src="{% static 'signup/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'signup/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->

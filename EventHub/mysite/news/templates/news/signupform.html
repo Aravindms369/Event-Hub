@@ -1,0 +1,25 @@
+{% extends "news/signup.html" %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <h3>New Account?</h3>
+      
+        {{form.as_p}}
+        
+
+        <button class="btn" style="background-color:skyblue; color:blue" type="submit">Register</button> &emsp;
+        <div style="text-align: center;">
+            Already a member?<a href="{% url 'news:loginform' %}">
+                Sign in now
+            </a>
+        </div> &nbsp;
+        <div style="text-align: center;">
+            Return To<a href="{% url 'news:home' %}">
+                Home
+            
+            </a>
+        </div>
+    </form>
+    
+{% endblock %}
