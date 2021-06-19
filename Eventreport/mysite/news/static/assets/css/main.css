@@ -1,0 +1,95 @@
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+    #banner .icon {
+      font-size: 2em;
+    }
+    ul.icons {
+      cursor: default;
+      list-style: none;
+      padding-left: 0;
+    }
+
+      ul.icons > li {
+        display: inline-block;
+        padding: 0 1em 0 0;
+      }
+
+        ul.icons > li:last-child {
+          padding-right: 0;
+        }
+
+        ul.icons > li .icon:before {
+          font-size: 2em;
+        }
+        input[type="submit"].icon,
+        input[type="reset"].icon,
+        input[type="button"].icon,
+        button.icon,
+        .button.icon {
+          padding-left: 1.35em;
+        }
+
+          input[type="submit"].icon:before,
+          input[type="reset"].icon:before,
+          input[type="button"].icon:before,
+          button.icon:before,
+          .button.icon:before {
+            margin-right: 0.5em;
+          }
+          .wrapper.style1 input[type="submit"].icon:before,
+          .wrapper.style1 input[type="reset"].icon:before,
+          .wrapper.style1 input[type="button"].icon:before,
+          .wrapper.style1 button.icon:before,
+          .wrapper.style1 .button.icon:before {
+            color: #bbb;
+          }
+          .wrapper.style2 input[type="submit"].icon:before,
+          .wrapper.style2 input[type="reset"].icon:before,
+          .wrapper.style2 input[type="button"].icon:before,
+          .wrapper.style2 button.icon:before,
+          .wrapper.style2 .button.icon:before {
+            color: #a5a9ad;
+          }.wrapper.style3 input[type="submit"].icon:before,
+  				.wrapper.style3 input[type="reset"].icon:before,
+  				.wrapper.style3 input[type="button"].icon:before,
+  				.wrapper.style3 button.icon:before,
+  				.wrapper.style3 .button.icon:before {
+  					color: #a5a9ad;
+  				}
+          #banner input[type="submit"].icon:before,
+    			#banner input[type="reset"].icon:before,
+    			#banner input[type="button"].icon:before,
+    			#banner button.icon:before,
+    			#banner .button.icon:before {
+    				color: #a5a9ad;
+    			}
+          #banner .icon {
+            border-radius: 100%;
+            border: solid 2px #fff;
+            color: #fff;
+            display: inline-block;
+            font-size: 3em;
+            height: 2.25em;
+            line-height: 1.25em;
+            margin-bottom: 0.5em;
+            padding: 0.5em;
+            width: 2.25em;
+          }
