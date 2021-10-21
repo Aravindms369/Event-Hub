@@ -5,7 +5,7 @@ This is a Django and Machine Learning based web-app. This app helps to detect ce
 
 **Back-End Technologies: Python**  
 
-**Database: sqlite3**  
+**Database: Sqlite3**  
 
 **FrameWorks: Django, Bootstrap, Tensorflow** 
 
