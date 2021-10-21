@@ -1,15 +1,21 @@
-# Event-Hub
+# EventReport - Automatic Report Generation System
+1. Download zip file/ clone this repository  
 
-4. Apply migrations:
-		
-		python manage.py migrate
-		python manage.py loaddata fixtures/init_data.json
-		
-5. Run the server
+2. Download the ML models seperately  
 
-		python manage.py runserver
+3. Install necessary packages  
+
+4. Apply migrations:  
+		```
+		python manage.py migrate  
+		```   
 		
-6. Run chat server in separate terminal
-        
-        python manage.py run_chat_server
-7. Access from the browser at `http://127.0.0.1:8000`
+		
+5. Run the server:  
+		```
+		python manage.py runserver  
+		```
+		
+
+	
+6. Access from the browser at `http://127.0.0.1:8000`
