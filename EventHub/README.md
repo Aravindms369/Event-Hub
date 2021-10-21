@@ -7,12 +7,13 @@
 
 4. Apply migrations:
 		```
-		python manage.py migrate
+		python manage.py migrate  
+		
 		python manage.py loaddata fixtures/init_data.json
 		```
 		
-5. Run the server
-                ```
+5. Run the server  
+		```
 		python manage.py runserver  
 		```
 		
