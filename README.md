@@ -10,5 +10,3 @@ This is a Django and Machine Learning based web-app. This app helps to detect ce
 **FrameWorks: Django, Bootstrap, Tensorflow** 
 
 **Machine Learning Models: Lstm, Gpt2**  
-
-
