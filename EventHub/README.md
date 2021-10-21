@@ -1,4 +1,4 @@
-# Event-Hub
+# EventHub - Early Event Detection System
 1. Download zip file/ clone this repository  
 
 2. Download the ML models seperately  
