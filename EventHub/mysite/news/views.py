@@ -81,8 +81,8 @@ def map(request):
 			saverecord.lat=request.POST.get('lat')
 			saverecord.lon=request.POST.get('lon')
 
-			auth = OAuthHandler( "TVcG31HAbOUfecvZHZIIxyg0W",  "wWzt0VfCsQhd4OiPd2TTvGasyZ3Hd0yMBwdmxMjujYz7qMKRNE")
-			auth.set_access_token( "1314794902471938048-GjCuWjMDCKIqLZnbHTZaS56ubzw3R8",  "cqNkv8rjlMXeayDO5N90Wme5Fwp2RYX5geP6tpP0maulN")
+			auth = OAuthHandler("<enter your tokens of twitter>")
+			auth.set_access_token( "<enter your tokens of twitter>")
 
 			api = tweepy.API(auth,wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
 			#tweets = api.home_timeline()
@@ -162,22 +162,6 @@ def map(request):
 					continue
 				tweets.append(i)
 
-			"""
-			for i in tweetss:
-				if i not in lis:
-					j=i
-					uslist=[]
-					uslist.append(i)
-					seq = tokenizer.texts_to_sequences(uslist)
-					padded = pad_sequences(seq, maxlen= 10)
-					pred = model.predict(padded)
-					labels = ['diesease', 'election','football']
-					eve = labels[np.argmax(pred)]
-
-					txt=location(country=saverecord.country, place=saverecord.place, lat=saverecord.lat, lon=saverecord.lon, text= j, event=eve)
-					lis.append(txt)
-			location.objects.bulk_create(lis)
-			"""
 			
 			main_url = countries[saverecord.country]
 			news_result = requests.get(main_url).json() 
@@ -229,80 +213,6 @@ def map(request):
 					lis.append(txt)
 			location.objects.bulk_create(lis)
 
-			"""
-			results = []
-			for ar in article:
-				k=ar["description"]
-				if k==None:
-					continue
-				uslist=[]
-				uslist.append(k)
-				seq = tokenizer.texts_to_sequences(uslist)
-				padded = pad_sequences(seq, maxlen= 10)
-				pred = model.predict(padded)
-				labels = ['diesease', 'election','football']
-				eve = labels[np.argmax(pred)]
-				txt1 = location(country=saverecord.country, place=saverecord.place, lat=saverecord.lat, lon=saverecord.lon, text= ar["description"], event=eve)
-				results.append(txt1)
-			location.objects.bulk_create(results)
-			"""
-
-			"""
-			#clustering the datas
-			lis1=lis+results
-			lis2=[]
-			for i in range(len(lis1)):
-				lis2.append(0)
-			def clustering(lis1,lis2):
-				disease= "The currently raging pandemic of coronavirus disease 2019 COVID-19 is taking more lives today than over the first five months after its onset. The difficulty in gaining control of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) stems partly from the fact that most infections are asymptomatic or very mild. Moreover, the frequent emergence of escape variants that overcome immune inhibition elicited by earlier variants has also challenged attempts to arrest the virus’s spread. A new study, released as a preprint on the bioRxiv* server, discusses variations in viral pathogenicity and in transmission, which are responsible for asymptomatic infection and for superspreading events. The ability to understand this would open the way to understand how this virus behaves the way it does, in terms of its virulence, its spread, and its emergent variants of concern. The COVID-19 pandemic isn’t an obvious or typical engineering problem. But in its basic behavior it is an unstable, open-loop system. Left alone, it grows exponentially: Like many such systems, it can be stabilized effectively and efficiently by applying the principles of control theory, most notably the use of feedback."
-				football = "Ahead of the draw, FIFA confirmed the pairings for the qualifying matches. The 14 lowest-ranked teams will take part in single-leg matches, based on the April edition of the FIFA/Coca-Cola World Ranking: The tournament will take place later this year – during a similar timeslot to the FIFA World Cup Qatar 2022™. It is seen as a vital opportunity to test operations and facilities exactly a year before Qatar hosts the first World Cup in the Middle East and Arab world The draw for the FIFA Arab Cup Qatar 2021™ was conducted at Katara Opera House in Doha tonight. Hisense, the world-renowned technology company, has entered into a partnership with FIFA to become an Official Sponsor of the FIFA World Cup Qatar 2022™, creating an exclusive connection between the tournament’s worldwide audience in unique and compelling ways. It gives me great pleasure to welcome Hisense on board as an Official Sponsor of the FIFA World Cup, and we are delighted to partner with this internationally respected brand, which also has a growing presence in the sports market,” said FIFA Secretary General Fatma Samoura. “FIFA and Hisense are both focused on technology, innovation and giving people the best possible experience. I am confident that this collaboration will support the global objectives of both organisations and contribute to the success of what is sure to be an amazing event next year."
-				election= "The Election Commission on Tuesday placed Trinamool Congress Birbhum president Anubrata Mondal under strict surveillance from 5 pm till Friday 7 am, an official said. Election, the formal process of selecting a person for public office or of accepting or rejecting a political proposition by voting. It is important to distinguish between the form and the substance of elections. In some cases, electoral forms are present but the substance of an election is missing, as when voters do not have a free and genuine choice between at least two alternatives. Most countries hold elections in at least the formal sense, but in many of them the elections are not competitive (e.g., all but one party may be forbidden to contest) or the electoral situation is in other respects highly compromised. I welcome the decision of the ECI banning celebrations and processions of electoral victories. I have directed all State units of BJP to strictly adhere to this decision. All karykartas of BJP are using their energies to help the ones in need in this hour of crisis, Mr. Nadda said in a tweet In spite of the speed of the rise, political considerations remained paramount. The Trinamool was the only party that asked the commission to shorten the duration of the election by clubbing phases together. As the strongest party on the ground, it was likely to be least affected by campaigning"
-				def jaccard_similarity(query, document):
-					intersection = set(query).intersection(set(document))
-					union = set(query).union(set(document))
-					return len(intersection)/len(union)
-				def get_scores(group,tweets):
-					scores = []
-					for tweet in tweets:
-						s = jaccard_similarity(group, tweet)
-						scores.append(s)
-					return scores
-				d_scores = get_scores(disease, lis1)
-				f_scores = get_scores(football, lis1)
-				e_scores = get_scores(election, lis1)
-				data  = {'names':lis2,'disease_score':d_scores,'football_score': f_scores, 'election_score':e_scores}
-				scores_df = pd.DataFrame(data)
-				l1 = scores_df.disease_score.to_list()
-				l2 = scores_df.football_score.to_list()
-				l3 = scores_df.election_score.to_list()
-				#assign classes based on highest score
-				def get_classes(l1, l2, l3):
-					dis = []
-					foot = []
-					elec = []
-					for i, j, k in zip(l1, l2, l3):
-						m = max(i, j, k)
-						if m == i:
-							dis.append(1)
-						else:
-							dis.append(0)
-						if m == j:
-							foot.append(1)
-						else:
-							foot.append(0)
-						if m == k:
-							elec.append(1)
-						else:
-							elec.append(0)
-					return dis, foot, elec
-				dis, foot, elec = get_classes(l1, l2, l3)
-				print(dis)
-				print(foot)
-				print(elec)
-
-			clustering(lis1,lis2)
-			"""
-
 			return HttpResponseRedirect(reverse("news:map"))
 	else:
 		return render(request,'news/map.html')
@@ -343,8 +253,8 @@ def loginform(request):
 	form = AuthenticationForm()
 	return render(request,"news/loginform.html", context={"form":form})
 def userhome(request):
-	auth = OAuthHandler( "TVcG31HAbOUfecvZHZIIxyg0W",  "wWzt0VfCsQhd4OiPd2TTvGasyZ3Hd0yMBwdmxMjujYz7qMKRNE")
-	auth.set_access_token( "1314794902471938048-GjCuWjMDCKIqLZnbHTZaS56ubzw3R8",  "cqNkv8rjlMXeayDO5N90Wme5Fwp2RYX5geP6tpP0maulN")
+	auth = OAuthHandler( "<twitter api>")
+	auth.set_access_token( "<twitter api>")
 
 	api = tweepy.API(auth)
 	public_tweets = api.home_timeline()
